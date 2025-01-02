@@ -1,5 +1,16 @@
-@import "~@fortawesome/fontawesome-free/css/all.css";
+/* You can add global styles to this file, and also import other style files */
 
-body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  // font-size: 16px; // Optional: Define a base font size
+  // line-height: 1.6; // Optional: Define a base line height
+  // color: #333; // Optional: Define a default text color
+}
+
+// Example to override specific elements (if needed)
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  // font-weight: 700; // Adjust weight for headings
 }

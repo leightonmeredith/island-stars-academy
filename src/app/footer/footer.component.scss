@@ -1,36 +1,12 @@
-// mat-toolbar {
-//     --default-height: 50px;
-//   }
-  
-  mat-toolbar[color="primary"] {
-    // bottom: 0;
-    // left: 0;
-    // position: fixed;
-    // height: var(--default-height);
-    // z-index: 1;
-    background-color: #fb3;
-  }
+.container {
+  background-color: #000;
+  height: 150px;
+  color: #FFF;
 
-  .custom-toolbar {
-    padding: 100px 0 100px 50px;
-    font-style: italic; 
-    font-weight: 600; 
-    font-family: Chalkduster, fantasy;
-  }
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Vertically center items */
+  padding: 10px;
+  padding-right: 10rem;
+}
 
-  .custom-toolbar-web {
-    padding: 160px;
-  }
-
-  .menu {
-    cursor: pointer;
-    font-family: monospace;
-  }
-  
-  .spacer {
-    flex: 1 1 auto;
-  }
-
-  .menu-spacer {    
-    padding: 20px;
-  }
