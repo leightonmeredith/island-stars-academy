@@ -1,21 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HandSetComponent } from 'src/shared/handset.component';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { RoutesConsants } from '../shared/utils/constants';
 
 @Component({
   selector: 'app-footer',
+  standalone: true,
+  imports: [],
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrl: './footer.component.scss'
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
+  private router = inject(Router);
 
-  isHandset$: Observable<boolean>;
-
-  constructor(private handsetComponent: HandSetComponent) {
-    this.isHandset$ = this.handsetComponent.isHandset$;
+  goToHome() {
+    this.router.navigate([RoutesConsants.HOME])
   }
 
-  ngOnInit(): void {
+  goToAbout() {
+    this.router.navigate([RoutesConsants.ABOUT])
   }
 
+  goToCoaches() {
+    this.router.navigate([RoutesConsants.COACHES])
+  }
 }
