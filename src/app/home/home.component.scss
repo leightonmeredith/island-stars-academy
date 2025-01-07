@@ -1,0 +1,15 @@
+.example-card {
+  max-width: 37em;
+}
+
+.example-header-image {
+  background-image: url('../../assets/img/isa-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+}

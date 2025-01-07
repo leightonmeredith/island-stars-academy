@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { Router } from '@angular/router';
-import { RoutesConsants } from '../shared/utils/constants';
+import { RoutesConstants } from '../shared/utils/constants';
 
 @Component({
   selector: 'app-header',
@@ -15,14 +15,18 @@ export class HeaderComponent {
   private router = inject(Router)
 
   goToHome() {
-    this.router.navigate([RoutesConsants.HOME])
+    this.router.navigate([RoutesConstants.HOME])
   }
 
   goToAbout() {
-    this.router.navigate([RoutesConsants.ABOUT])
+    this.router.navigate([RoutesConstants.ABOUT])
   }
 
   goToCoaches() {
-    this.router.navigate([RoutesConsants.COACHES])
+    this.router.navigate([RoutesConstants.COACHES])
+  }
+
+  goToPrograms() {
+    this.router.navigate([RoutesConstants.PROGRAMS])
   }
 }
