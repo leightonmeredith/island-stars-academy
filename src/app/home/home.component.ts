@@ -4,7 +4,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RoutesConstants } from '../shared/utils/constants';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +15,6 @@ import { RoutesConstants } from '../shared/utils/constants';
 export class HomeComponent {
   private router = inject(Router)
 items = [
-  // '1', '2', '3'
   {
     title: 'Who We Are',
     subtitle: 'Island Stars Academy At A Glance',
