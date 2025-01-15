@@ -8,5 +8,17 @@
   align-items: center; /* Vertically center items */
   padding: 10px;
   padding-right: 10rem;
+  box-sizing: border-box; /* Ensures padding doesn’t increase width */
 }
 
+.first-footer-link {
+  cursor: pointer;
+  margin-left: auto;
+  text-align: right;
+}
+
+.footer-link {
+  cursor: pointer;
+  margin-left: 5rem;
+  text-align: right;
+}

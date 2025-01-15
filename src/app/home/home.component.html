@@ -1,7 +1,7 @@
 
 <div id="container">
-  <div style="display: flex; justify-content: space-between; justify-items: center; align-items: start;">
-    <div *ngFor="let item of items; let i = index">
+  <div [ngClass]="isMobile ? 'mobile-home-view' : 'desktop-home-view'">
+    <div *ngFor="let item of items; let i = index" class="mat-card-container">
       <mat-card class="example-card" appearance="outlined">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
@@ -19,5 +19,4 @@
       </mat-card>
     </div>
   </div>
-
 </div>
