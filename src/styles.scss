@@ -14,3 +14,40 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
   // font-weight: 700; // Adjust weight for headings
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+p, ul, strong {
+  font-size: 1.2rem;
+}
+
+#container {
+  padding: 2rem;
+}
+
+.mat-mdc-mini-fab {
+  background-color: black !important;
+}
+
+/* Hide on mobile */
+.desktop-view {
+  display: none;
+}
+
+/* Show on mobile */
+.mobile-view {
+  display: block;
+}
+
+
+@media (min-width: 1024px) {
+  .desktop-view {
+    display: block;
+  }
+
+  .mobile-view {
+    display: none;
+  }
+}
