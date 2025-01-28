@@ -73,7 +73,7 @@ export class HomeComponent implements OnInit {
   }
 
   private checkScreenSize() {
-    this.isMobile = window.innerWidth < 768; // Define breakpoint for mobile view
+    this.isMobile = window.innerWidth < 1024; // Define breakpoint for mobile view
   }
 }
 
