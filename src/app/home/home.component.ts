@@ -6,11 +6,10 @@ import { Router } from '@angular/router';
 import { RoutesConstants } from '../shared/utils/constants';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [CommonModule, MatCardModule, MatButtonModule],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   private router = inject(Router)
