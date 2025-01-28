@@ -1,28 +1,51 @@
-<h1>Welcome to Island Stars Academy: Nurturing Tomorrow's Soccer Champions</h1>
-<p>At Island Stars Academy, we believe in the power of soccer to inspire, educate, and unite. Our dedicated team of professional soccer coaches is passionate about developing players both on and off the field. Whether your child dreams of becoming a professional athlete or simply wants to enjoy the game while building teamwork and leadership skills, we are here to guide their journey.</p>
+<div id="container">
 
-<h3>Meet Our Coaches: Experience, Passion, and Dedication</h3>
-<p>Our coaches bring years of experience, both as players and mentors, to create an environment where every athlete can thrive. They are not only skilled in teaching the technical aspects of soccer but also emphasize the importance of sportsmanship, discipline, and a positive attitude.</p>
+  <h1>Welcome to Island Stars Academy: Nurturing Tomorrow's Soccer Champions</h1>
+  <p>At Island Stars Academy, we believe in the power of soccer to inspire, educate, and unite. Our dedicated team of professional soccer coaches is passionate about developing players both on and off the field. Whether your child dreams of becoming a professional athlete or simply wants to enjoy the game while building teamwork and leadership skills, we are here to guide their journey.</p>
 
-<h3>What Sets Us Apart?</h3>
-<ul>
-  <li>
-    <strong>Personalized Training Programs:</strong> Tailored to the needs and goals of each player.
-  </li>
-  <li>
-    <strong>Holistic Development:</strong> Focusing on physical fitness, mental toughness, and team spirit.
-  </li>
-  <li>
-    <strong>Certified Expertise:</strong> Our coaches hold national and international certifications, ensuring top-tier instruction.
-  </li>
-  <li>
-    <strong>Fun and Engaging Approach:</strong> Because soccer should be as enjoyable as it is educational!
-  </li>
-</ul>
+  <h3>Meet Our Coaches: Experience, Passion, and Dedication</h3>
+  <p>Our coaches bring years of experience, both as players and mentors, to create an environment where every athlete can thrive. They are not only skilled in teaching the technical aspects of soccer but also emphasize the importance of sportsmanship, discipline, and a positive attitude.</p>
+
+  <h3>What Sets Us Apart?</h3>
+  <ul>
+    <li>
+      <strong>Personalized Training Programs:</strong> Tailored to the needs and goals of each player.
+    </li>
+    <li>
+      <strong>Holistic Development:</strong> Focusing on physical fitness, mental toughness, and team spirit.
+    </li>
+    <li>
+      <strong>Certified Expertise:</strong> Our coaches hold national and international certifications, ensuring top-tier instruction.
+    </li>
+    <li>
+      <strong>Fun and Engaging Approach:</strong> Because soccer should be as enjoyable as it is educational!
+    </li>
+  </ul>
 
 
-<h3>Join the Island Stars Family</h3>
-<p>Whether your child is taking their first steps on the pitch or aiming to refine advanced skills, Island Stars Academy is the perfect place to grow. Together, we’ll ignite their passion for soccer and equip them with the tools to succeed both on and off the field.</p>
+  <h3>Join the Island Stars Family</h3>
+  <p>Whether your child is taking their first steps on the pitch or aiming to refine advanced skills, Island Stars Academy is the perfect place to grow. Together, we’ll ignite their passion for soccer and equip them with the tools to succeed both on and off the field.</p>
 
-<h3>Your journey starts here.</h3>
-<p>Let’s shine bright, together. 🌟</p>
+  <h3>Your journey starts here.</h3>
+  <p>Let’s shine bright, together. 🌟</p>
+
+  <hr />
+  <h1 style="text-align: center;">Our Coaches</h1>
+
+  <div class="pic-container">
+    @for(info of coachesInfo; track info) {
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+      </mat-card-header>
+      <img mat-card-image [src]="info.src" [alt]="info.alt">
+      <mat-card-content>
+        <p>{{ info.name }}</p>
+        <p>{{ info.title }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+    }
+  </div>
+</div>
