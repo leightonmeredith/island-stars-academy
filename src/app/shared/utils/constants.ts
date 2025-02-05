@@ -1,5 +1,6 @@
-export const RoutesConsants = {
+export const RoutesConstants = {
   HOME: 'home',
   ABOUT: 'about',
-  COACHES: 'coaches'
+  COACHES: 'coaches',
+  PROGRAMS: 'programs'
 }

@@ -1,13 +1,16 @@
 import { Component, inject } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 import { Router } from '@angular/router';
-import { RoutesConsants } from '../shared/utils/constants';
+import { RoutesConstants } from '../shared/utils/constants';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatToolbarModule, MatIconModule],
+  imports: [MatToolbarModule, MatMenuModule, MatButtonModule, BrowserAnimationsModule, MatIconModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -15,14 +18,18 @@ export class HeaderComponent {
   private router = inject(Router)
 
   goToHome() {
-    this.router.navigate([RoutesConsants.HOME])
+    this.router.navigate([RoutesConstants.HOME])
   }
 
   goToAbout() {
-    this.router.navigate([RoutesConsants.ABOUT])
+    this.router.navigate([RoutesConstants.ABOUT])
   }
 
   goToCoaches() {
-    this.router.navigate([RoutesConsants.COACHES])
+    this.router.navigate([RoutesConstants.COACHES])
+  }
+
+  goToPrograms() {
+    this.router.navigate([RoutesConstants.PROGRAMS])
   }
 }
