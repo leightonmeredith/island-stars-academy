@@ -20,9 +20,7 @@ Example:
 
 ## Checklist
 
-- [ ] Do all unit tests pass? `npm run test`
-
-- [ ] Did you maintain the previous code coverage percentage? `npm run gencode`
+- [ ] Did you maintain the previous code coverage percentage? `npm run test`
 
 - [ ] Did you lint your code without errors `npm run lint -- --fix`
 
