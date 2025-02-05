@@ -12,9 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 export class CoachesComponent {
 
   coachesInfo = [
-    {src: '../assets/img/coaches/leighton.jpg', name: 'Leighton "M" Meredith', title: 'Coach', alt: 'm-profile'},
-    {src: '../assets/img/coaches/dwayne.jpg', name: 'Dwayne "Zaro" Thomas', title: 'Coach', alt: 'zaro-profile'},
-    {src: '../assets/img/coaches/malcom.jpg', name: 'Shomari Malcolm', title: 'Coach', alt: 'malcom-profile'},
-    {src: '../assets/img/coaches/shauna.jpg', name: 'Shana Langley', title: 'Academy Coordinator', alt: 'shauna-profile'}
+    {src: '../assets/img/coaches/leighton.jpg', name: `Leighton 'M' Meredith`, title: 'Coach', alt: 'm-profile'},
+    {src: '../assets/img/coaches/dwayne.jpg', name: `Dwayne 'Zaro' Thomas`, title: 'Coach', alt: 'zaro-profile'},
+    {src: '../assets/img/coaches/malcolm.jpg', name: `Shomari Malcolm`, title: 'Coach', alt: 'malcolm-profile'},
+    {src: '../assets/img/coaches/shana.jpg', name: `Shana Langley`, title: 'Academy Coordinator', alt: 'shana-profile'}
   ]
 }
