@@ -40,8 +40,8 @@
       </mat-card-header>
       <img mat-card-image [src]="info.src" [alt]="info.alt">
       <mat-card-content>
-        <p>{{ info.name }}</p>
-        <p>{{ info.title }}</p>
+          <h2 class="horizontal-center-align">{{ info.name | uppercase }}</h2>
+          <p class="horizontal-center-align">{{ info.title | uppercase }}</p>
       </mat-card-content>
       <mat-card-actions>
       </mat-card-actions>

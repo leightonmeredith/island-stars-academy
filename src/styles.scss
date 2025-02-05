@@ -41,6 +41,12 @@ p, ul, strong {
   display: block;
 }
 
+.horizontal-center-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Centers horizontally
+}
+
 
 @media (min-width: 1024px) {
   .desktop-view {
