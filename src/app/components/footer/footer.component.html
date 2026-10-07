@@ -15,9 +15,11 @@
   <a (click)="goToCoaches()" class='desktop-view footer-link'>
     COACHES
   </a>
+  @if(showPlayers) {
   <a (click)="goToPlayers()" class='desktop-view footer-link'>
     PLAYERS
   </a>
+  }
   <a (click)="goToPrograms()" class='desktop-view footer-link'>
     PROGRAMS
   </a>
