@@ -24,11 +24,13 @@
           <h2>COACHES</h2>
         </a>
       </button>
+      @if(showPlayers) {
       <button mat-menu-item>
         <a (click)="goToPlayers()">
           <h2>PLAYERS</h2>
         </a>
       </button>
+      }
       <button mat-menu-item>
         <a (click)="goToPrograms()">
           <h2>PROGRAMS</h2>
@@ -46,9 +48,11 @@
   <a (click)="goToCoaches()" class='desktop-view header-link'>
     <h2>COACHES</h2>
   </a>
+  @if(showPlayers) {
   <a (click)="goToPlayers()" class='desktop-view header-link'>
     <h2>PLAYERS</h2>
   </a>
+  }
   <a (click)="goToPrograms()" class='desktop-view header-link'>
     <h2>PROGRAMS</h2>
   </a>

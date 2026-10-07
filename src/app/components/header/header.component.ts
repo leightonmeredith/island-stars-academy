@@ -5,6 +5,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { Router } from '@angular/router';
 import { RoutesConstants } from '../../shared/constants/routes.constant';
 import { MatButtonModule } from '@angular/material/button';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class HeaderComponent {
   private router = inject(Router);
+  private readonly showPlayers = environment.showPlayers;
 
   goToHome() {
     this.router.navigate([RoutesConstants.HOME]);
