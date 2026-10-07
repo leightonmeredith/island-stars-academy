@@ -1,3 +1,3 @@
 export const environment = {
-  showPlayers: false,
+  showPlayers: true,
 };
