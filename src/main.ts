@@ -8,6 +8,7 @@ import { AboutComponent } from './app/components/about/about.component';
 import { CoachesComponent } from './app/components/coaches/coaches.component';
 import { PlayersComponent } from './app/components/players/players.component';
 import { ProgramComponent } from './app/components/program/program.component';
+import { LoginComponent } from './app/components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'coaches', component: CoachesComponent },
   { path: 'players', component: PlayersComponent },
   { path: 'programs', component: ProgramComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/home' },
 ];
 

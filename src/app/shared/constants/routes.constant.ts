@@ -4,4 +4,5 @@ export const RoutesConstants = {
   COACHES: 'coaches',
   PLAYERS: 'players',
   PROGRAMS: 'programs',
+  LOGIN: 'login',
 };

@@ -17,6 +17,7 @@ import { environment } from '../../../environments/environment';
 export class HeaderComponent {
   private router = inject(Router);
   private readonly showPlayers = environment.showPlayers;
+  private readonly showLogin = environment.showLogin;
 
   goToHome() {
     this.router.navigate([RoutesConstants.HOME]);
@@ -36,5 +37,9 @@ export class HeaderComponent {
 
   goToPrograms() {
     this.router.navigate([RoutesConstants.PROGRAMS]);
+  }
+
+  goToLogin() {
+    this.router.navigate([RoutesConstants.LOGIN]);
   }
 }

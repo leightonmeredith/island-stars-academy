@@ -36,6 +36,13 @@
           <h2>PROGRAMS</h2>
         </a>
       </button>
+      @if(showLogin) {
+      <button mat-menu-item>
+        <a (click)="goToLogin()">
+          <h2>LOGIN</h2>
+        </a>
+      </button>
+      }
     </mat-menu>
   </div>
 
@@ -56,6 +63,11 @@
   <a (click)="goToPrograms()" class='desktop-view header-link'>
     <h2>PROGRAMS</h2>
   </a>
+  @if(showLogin) {
+  <a (click)="goToLogin()" class='desktop-view header-link'>
+    <h2>LOGIN</h2>
+  </a>
+  }
 
   <a href="https://www.instagram.com/islandstarsacademy/" target="_blank" style='cursor: pointer; padding-left: 4rem;'>
     <img src="../../assets/img/icon/instagram-black.svg" alt="isa-instagrm" width="30" height="30">
